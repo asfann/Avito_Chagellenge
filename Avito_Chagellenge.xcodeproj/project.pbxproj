@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5601B1B829088D1F00FFF4E1 /* Cachy in Frameworks */ = {isa = PBXBuildFile; productRef = 5601B1B729088D1F00FFF4E1 /* Cachy */; };
 		560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CB29056F650086EC18 /* AppDelegate.swift */; };
 		560EE8CE29056F650086EC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CD29056F650086EC18 /* SceneDelegate.swift */; };
 		560EE8D029056F650086EC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CF29056F650086EC18 /* ViewController.swift */; };
-		560EE8D329056F650086EC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560EE8D129056F650086EC18 /* Main.storyboard */; };
 		560EE8D529056F660086EC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560EE8D429056F660086EC18 /* Assets.xcassets */; };
 		560EE8D829056F660086EC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560EE8D629056F660086EC18 /* LaunchScreen.storyboard */; };
 		560EE8E329056F660086EC18 /* Avito_ChagellengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8E229056F660086EC18 /* Avito_ChagellengeTests.swift */; };
 		560EE8ED29056F660086EC18 /* Avito_ChagellengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8EC29056F660086EC18 /* Avito_ChagellengeUITests.swift */; };
 		560EE8EF29056F660086EC18 /* Avito_ChagellengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8EE29056F660086EC18 /* Avito_ChagellengeUITestsLaunchTests.swift */; };
+		560EE8FD29059E1A0086EC18 /* Avito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8FC29059E1A0086EC18 /* Avito.swift */; };
+		560EE90229059ED50086EC18 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE90129059ED50086EC18 /* ApiCaller.swift */; };
+		560EE9042905ED490086EC18 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE9032905ED490086EC18 /* CompanyCell.swift */; };
+		5670DABB2906058B00D23265 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABA2906058B00D23265 /* Company.swift */; };
+		5670DABD2906059600D23265 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABC2906059500D23265 /* Employee.swift */; };
+		5670DABF2907541900D23265 /* AvitoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABE2907541900D23265 /* AvitoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,6 @@
 		560EE8CB29056F650086EC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		560EE8CD29056F650086EC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		560EE8CF29056F650086EC18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		560EE8D229056F650086EC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		560EE8D429056F660086EC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560EE8D729056F660086EC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560EE8D929056F660086EC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,12 @@
 		560EE8E829056F660086EC18 /* Avito_ChagellengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Avito_ChagellengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		560EE8EC29056F660086EC18 /* Avito_ChagellengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avito_ChagellengeUITests.swift; sourceTree = "<group>"; };
 		560EE8EE29056F660086EC18 /* Avito_ChagellengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avito_ChagellengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		560EE8FC29059E1A0086EC18 /* Avito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avito.swift; sourceTree = "<group>"; };
+		560EE90129059ED50086EC18 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		560EE9032905ED490086EC18 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		5670DABA2906058B00D23265 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5670DABC2906059500D23265 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		5670DABE2907541900D23265 /* AvitoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5601B1B829088D1F00FFF4E1 /* Cachy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +111,13 @@
 		560EE8CA29056F650086EC18 /* Avito_Chagellenge */ = {
 			isa = PBXGroup;
 			children = (
-				560EE8CB29056F650086EC18 /* AppDelegate.swift */,
 				560EE8CD29056F650086EC18 /* SceneDelegate.swift */,
-				560EE8CF29056F650086EC18 /* ViewController.swift */,
-				560EE8D129056F650086EC18 /* Main.storyboard */,
+				560EE8CB29056F650086EC18 /* AppDelegate.swift */,
+				560EE8FE29059EAE0086EC18 /* Managers */,
+				5670DAC32907CDA600D23265 /* ViewModel */,
+				560EE8FB29059DFE0086EC18 /* Model */,
+				5670DAC22907CD9A00D23265 /* View */,
+				5670DAC02907CD7A00D23265 /* Controller */,
 				560EE8D429056F660086EC18 /* Assets.xcassets */,
 				560EE8D629056F660086EC18 /* LaunchScreen.storyboard */,
 				560EE8D929056F660086EC18 /* Info.plist */,
@@ -127,6 +142,48 @@
 			path = Avito_ChagellengeUITests;
 			sourceTree = "<group>";
 		};
+		560EE8FB29059DFE0086EC18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				560EE8FC29059E1A0086EC18 /* Avito.swift */,
+				5670DABA2906058B00D23265 /* Company.swift */,
+				5670DABC2906059500D23265 /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		560EE8FE29059EAE0086EC18 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				560EE90129059ED50086EC18 /* ApiCaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5670DAC02907CD7A00D23265 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				560EE8CF29056F650086EC18 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5670DAC22907CD9A00D23265 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				560EE9032905ED490086EC18 /* CompanyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5670DAC32907CDA600D23265 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5670DABE2907541900D23265 /* AvitoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +200,9 @@
 			dependencies = (
 			);
 			name = Avito_Chagellenge;
+			packageProductDependencies = (
+				5601B1B729088D1F00FFF4E1 /* Cachy */,
+			);
 			productName = Avito_Chagellenge;
 			productReference = 560EE8C829056F650086EC18 /* Avito_Chagellenge.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 560EE8BF29056F650086EC18;
+			packageReferences = (
+				5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */,
+			);
 			productRefGroup = 560EE8C929056F650086EC18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +296,6 @@
 			files = (
 				560EE8D829056F660086EC18 /* LaunchScreen.storyboard in Resources */,
 				560EE8D529056F660086EC18 /* Assets.xcassets in Resources */,
-				560EE8D329056F650086EC18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				560EE8D029056F650086EC18 /* ViewController.swift in Sources */,
+				5670DABD2906059600D23265 /* Employee.swift in Sources */,
+				560EE9042905ED490086EC18 /* CompanyCell.swift in Sources */,
+				5670DABF2907541900D23265 /* AvitoViewModel.swift in Sources */,
+				560EE8FD29059E1A0086EC18 /* Avito.swift in Sources */,
 				560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */,
+				5670DABB2906058B00D23265 /* Company.swift in Sources */,
 				560EE8CE29056F650086EC18 /* SceneDelegate.swift in Sources */,
+				560EE90229059ED50086EC18 /* ApiCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		560EE8D129056F650086EC18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				560EE8D229056F650086EC18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		560EE8D629056F660086EC18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +502,9 @@
 				INFOPLIST_FILE = Avito_Chagellenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +530,9 @@
 				INFOPLIST_FILE = Avito_Chagellenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Sadmansamee/CachyKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5601B1B729088D1F00FFF4E1 /* Cachy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */;
+			productName = Cachy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 560EE8C029056F650086EC18 /* Project object */;
 }
