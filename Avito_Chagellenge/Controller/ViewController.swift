@@ -96,9 +96,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 CoreDataManager.shared.allEmployees()
             case .failure(_):
                 DispatchQueue.main.async {
-                    let dialogMessage = UIAlertController(title: "Oops", message: "You have no internet connection", preferredStyle: .alert);                    self?.present(dialogMessage, animated: true, completion: nil)
+                    let dialogMessage = UIAlertController(title: "Oops", message: "You have no internet connection", preferredStyle: .alert);
+                    let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                         print("Ok button tapped")
+                      })
+                     dialogMessage.addAction(ok)
+                    self?.present(dialogMessage, animated: true, completion: nil)
                 }
             }
+                                           
             
         }
     }

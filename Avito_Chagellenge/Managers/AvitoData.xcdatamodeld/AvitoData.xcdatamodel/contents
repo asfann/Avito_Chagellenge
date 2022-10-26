@@ -3,6 +3,6 @@
     <entity name="AvitoEntity" representedClassName=".AvitoEntity" syncable="YES" codeGenerationType="category">
         <attribute name="name" optional="YES" attributeType="String" customClassName="[String}"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
-        <attribute name="skills" optional="YES" attributeType="Transformable" valueTransformerName="NSKeyedUnarchiveFromDataTransformerName" customClassName="[String]"/>
+        <attribute name="skills" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
     </entity>
 </model>
