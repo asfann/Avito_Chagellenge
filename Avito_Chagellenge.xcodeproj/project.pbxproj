@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5601B1C1290979CA00FFF4E1 /* Cachy in Frameworks */ = {isa = PBXBuildFile; productRef = 5601B1C0290979CA00FFF4E1 /* Cachy */; };
+		5601B1C6290991A100FFF4E1 /* AvitoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5601B1C4290991A100FFF4E1 /* AvitoData.xcdatamodeld */; };
+		5601B1C82909920F00FFF4E1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601B1C72909920F00FFF4E1 /* CoreDataManager.swift */; };
 		560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CB29056F650086EC18 /* AppDelegate.swift */; };
 		560EE8CE29056F650086EC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CD29056F650086EC18 /* SceneDelegate.swift */; };
 		560EE8D029056F650086EC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CF29056F650086EC18 /* ViewController.swift */; };
-		560EE8D529056F660086EC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560EE8D429056F660086EC18 /* Assets.xcassets */; };
-		560EE8D829056F660086EC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560EE8D629056F660086EC18 /* LaunchScreen.storyboard */; };
 		560EE8E329056F660086EC18 /* Avito_ChagellengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8E229056F660086EC18 /* Avito_ChagellengeTests.swift */; };
 		560EE8ED29056F660086EC18 /* Avito_ChagellengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8EC29056F660086EC18 /* Avito_ChagellengeUITests.swift */; };
 		560EE8EF29056F660086EC18 /* Avito_ChagellengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8EE29056F660086EC18 /* Avito_ChagellengeUITestsLaunchTests.swift */; };
@@ -22,6 +22,7 @@
 		5670DABB2906058B00D23265 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABA2906058B00D23265 /* Company.swift */; };
 		5670DABD2906059600D23265 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABC2906059500D23265 /* Employee.swift */; };
 		5670DABF2907541900D23265 /* AvitoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670DABE2907541900D23265 /* AvitoViewModel.swift */; };
+		568B0DEE29099EAE004BB94A /* AvitoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B0DEC29099EAE004BB94A /* AvitoEntity+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5601B1C5290991A100FFF4E1 /* AvitoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AvitoData.xcdatamodel; sourceTree = "<group>"; };
+		5601B1C72909920F00FFF4E1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		560EE8C829056F650086EC18 /* Avito_Chagellenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avito_Chagellenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560EE8CB29056F650086EC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		560EE8CD29056F650086EC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		5670DABA2906058B00D23265 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		5670DABC2906059500D23265 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		5670DABE2907541900D23265 /* AvitoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvitoViewModel.swift; sourceTree = "<group>"; };
+		568B0DEC29099EAE004BB94A /* AvitoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AvitoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		560EE8BF29056F650086EC18 = {
 			isa = PBXGroup;
 			children = (
+				568B0DEC29099EAE004BB94A /* AvitoEntity+CoreDataClass.swift */,
 				560EE8CA29056F650086EC18 /* Avito_Chagellenge */,
 				560EE8E129056F660086EC18 /* Avito_ChagellengeTests */,
 				560EE8EB29056F660086EC18 /* Avito_ChagellengeUITests */,
@@ -155,7 +160,9 @@
 		560EE8FE29059EAE0086EC18 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5601B1C4290991A100FFF4E1 /* AvitoData.xcdatamodeld */,
 				560EE90129059ED50086EC18 /* ApiCaller.swift */,
+				5601B1C72909920F00FFF4E1 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -294,8 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560EE8D829056F660086EC18 /* LaunchScreen.storyboard in Resources */,
-				560EE8D529056F660086EC18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,13 +327,16 @@
 			files = (
 				560EE8D029056F650086EC18 /* ViewController.swift in Sources */,
 				5670DABD2906059600D23265 /* Employee.swift in Sources */,
+				568B0DEE29099EAE004BB94A /* AvitoEntity+CoreDataClass.swift in Sources */,
 				560EE9042905ED490086EC18 /* CompanyCell.swift in Sources */,
 				5670DABF2907541900D23265 /* AvitoViewModel.swift in Sources */,
 				560EE8FD29059E1A0086EC18 /* Avito.swift in Sources */,
 				560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */,
 				5670DABB2906058B00D23265 /* Company.swift in Sources */,
+				5601B1C6290991A100FFF4E1 /* AvitoData.xcdatamodeld in Sources */,
 				560EE8CE29056F650086EC18 /* SceneDelegate.swift in Sources */,
 				560EE90229059ED50086EC18 /* ApiCaller.swift in Sources */,
+				5601B1C82909920F00FFF4E1 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +689,19 @@
 			productName = Cachy;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5601B1C4290991A100FFF4E1 /* AvitoData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5601B1C5290991A100FFF4E1 /* AvitoData.xcdatamodel */,
+			);
+			currentVersion = 5601B1C5290991A100FFF4E1 /* AvitoData.xcdatamodel */;
+			path = AvitoData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 560EE8C029056F650086EC18 /* Project object */;
 }

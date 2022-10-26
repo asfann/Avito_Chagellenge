@@ -6,10 +6,8 @@
 //
 
 import Foundation
-import DataCache
 
-
-class Avito: Codable {
+struct Avito: Codable {
     let company: Company
 }
 

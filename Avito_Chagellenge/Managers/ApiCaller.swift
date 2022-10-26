@@ -35,7 +35,7 @@ class APICaller {
                     do{
                         let results = try JSONDecoder().decode(Avito.self, from: data!)
                         completion(.success(results.company))
-                        _ = CachyObject(value: results , key: "companyName", expirationDate: ExpiryDate.seconds(3600).date)
+                      
                     }catch{
                         completion(.failure(error))
                     }
@@ -55,8 +55,7 @@ class APICaller {
                 do{
                     let results = try JSONDecoder().decode(Avito.self, from: data!)
                     completion(.success(results.company.employees))
-                    _ = CachyObject(value: results , key: "Employees", expirationDate: ExpiryDate.seconds(3600).date)
-                }catch{
+                                    }catch{
                     completion(.failure(APIError.failedToGetData.localizedDescription as! Error))
                 }
             }

@@ -8,13 +8,19 @@
 import Foundation
 
 
-class Employee: Codable {
-    let name, phoneNumber: String
-    let skills: [String]
+struct Employee: Codable {
+    let name, phoneNumber: String?
+    let skills: [String]?
 
     enum CodingKeys: String, CodingKey {
         case name
         case phoneNumber = "phone_number"
         case skills
+    }
+    
+    init(avito: AvitoEntity) {
+        self.name = avito.name
+        self.phoneNumber = avito.phoneNumber
+        self.skills = avito.skills
     }
 }

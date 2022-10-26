@@ -9,11 +9,10 @@ import UIKit
 
 
 
-
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     private var company: Company?
-    private var employees: [Employee] = []
+     var employees: [Employee] = []
    
     
     private let tableView: UITableView = {
@@ -37,9 +36,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         tableView.delegate = self
         getCompanyName()
         getEmployees()
-        
-        
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3600) {
+            CoreDataManager.shared.deleteAll("AvitoEntity")
+            self.getEmployees()
+        }
         
     }
     
@@ -56,8 +56,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EmployeeCell.identifier, for: indexPath) as? EmployeeCell else {
             return UITableViewCell()
         }
-        let employee = self.employees.sorted(by: { $0.name < $1.name })[indexPath.row]
-        cell.configure(with: AvitoViewModel(name: employee.name, skills: employee.skills, number: employee.phoneNumber))
+        let employee = self.employees.sorted(by: { $0.name! < $1.name! })[indexPath.row]
+        cell.configure(with: AvitoViewModel(name: employee.name!, skills: employee.skills!, number: employee.phoneNumber!))
         return cell
     }
     
@@ -90,6 +90,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
                 }
+                for employee in employees {
+                    CoreDataManager.shared.addEmployees(employee)
+                }
+                CoreDataManager.shared.allEmployees()
             case .failure(_):
                 DispatchQueue.main.async {
                     let dialogMessage = UIAlertController(title: "Oops", message: "You have no internet connection", preferredStyle: .alert);                    self?.present(dialogMessage, animated: true, completion: nil)
