@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5601B1C1290979CA00FFF4E1 /* Cachy in Frameworks */ = {isa = PBXBuildFile; productRef = 5601B1C0290979CA00FFF4E1 /* Cachy */; };
 		5601B1C6290991A100FFF4E1 /* AvitoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5601B1C4290991A100FFF4E1 /* AvitoData.xcdatamodeld */; };
 		5601B1C82909920F00FFF4E1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601B1C72909920F00FFF4E1 /* CoreDataManager.swift */; };
 		560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CB29056F650086EC18 /* AppDelegate.swift */; };
@@ -71,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5601B1C1290979CA00FFF4E1 /* Cachy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +206,6 @@
 			);
 			name = Avito_Chagellenge;
 			packageProductDependencies = (
-				5601B1C0290979CA00FFF4E1 /* Cachy */,
 			);
 			productName = Avito_Chagellenge;
 			productReference = 560EE8C829056F650086EC18 /* Avito_Chagellenge.app */;
@@ -283,7 +280,6 @@
 			);
 			mainGroup = 560EE8BF29056F650086EC18;
 			packageReferences = (
-				5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */,
 			);
 			productRefGroup = 560EE8C929056F650086EC18 /* Products */;
 			projectDirPath = "";
@@ -670,25 +666,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Sadmansamee/CachyKit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5601B1C0290979CA00FFF4E1 /* Cachy */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */;
-			productName = Cachy;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5601B1C4290991A100FFF4E1 /* AvitoData.xcdatamodeld */ = {
