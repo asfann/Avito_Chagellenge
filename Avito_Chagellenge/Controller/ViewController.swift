@@ -37,6 +37,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         tableView.delegate = self
         getCompanyName()
         getEmployees()
+        
+        
+        
+        
     }
     
     override func viewDidLayoutSubviews() {

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Sadmansamee/CachyKit",
       "state" : {
-        "revision" : "4fb6d8e49f15175c2877e12c9bed13509236d511",
-        "version" : "1.0.14"
+        "branch" : "master",
+        "revision" : "b5f8dbed3f2903591ec1718fdc0b55d261797db4"
       }
     }
   ],

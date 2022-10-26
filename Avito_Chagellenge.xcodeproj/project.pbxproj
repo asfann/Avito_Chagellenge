@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5601B1B829088D1F00FFF4E1 /* Cachy in Frameworks */ = {isa = PBXBuildFile; productRef = 5601B1B729088D1F00FFF4E1 /* Cachy */; };
+		5601B1C1290979CA00FFF4E1 /* Cachy in Frameworks */ = {isa = PBXBuildFile; productRef = 5601B1C0290979CA00FFF4E1 /* Cachy */; };
 		560EE8CC29056F650086EC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CB29056F650086EC18 /* AppDelegate.swift */; };
 		560EE8CE29056F650086EC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CD29056F650086EC18 /* SceneDelegate.swift */; };
 		560EE8D029056F650086EC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EE8CF29056F650086EC18 /* ViewController.swift */; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5601B1B829088D1F00FFF4E1 /* Cachy in Frameworks */,
+				5601B1C1290979CA00FFF4E1 /* Cachy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +201,7 @@
 			);
 			name = Avito_Chagellenge;
 			packageProductDependencies = (
-				5601B1B729088D1F00FFF4E1 /* Cachy */,
+				5601B1C0290979CA00FFF4E1 /* Cachy */,
 			);
 			productName = Avito_Chagellenge;
 			productReference = 560EE8C829056F650086EC18 /* Avito_Chagellenge.app */;
@@ -276,7 +276,7 @@
 			);
 			mainGroup = 560EE8BF29056F650086EC18;
 			packageReferences = (
-				5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */,
+				5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */,
 			);
 			productRefGroup = 560EE8C929056F650086EC18 /* Products */;
 			projectDirPath = "";
@@ -426,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -480,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -664,20 +664,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */ = {
+		5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Sadmansamee/CachyKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5601B1B729088D1F00FFF4E1 /* Cachy */ = {
+		5601B1C0290979CA00FFF4E1 /* Cachy */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5601B1B629088D1F00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */;
+			package = 5601B1BF290979CA00FFF4E1 /* XCRemoteSwiftPackageReference "CachyKit" */;
 			productName = Cachy;
 		};
 /* End XCSwiftPackageProductDependency section */

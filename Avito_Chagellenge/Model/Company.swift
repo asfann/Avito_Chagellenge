@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Company: Codable {
+class Company: Codable {
     let name: String
     let employees: [Employee]
 }
